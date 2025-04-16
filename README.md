@@ -24,15 +24,19 @@ This repository contains the implementation of SAR Image Colorization using a Co
 ### Generator
 - U-Net architecture with skip connections.
 - Downsamples the input using convolution, upsamples using transposed convolution.
+<div align="center">
 <img src="https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms/blob/main/Images/UNet.png" width="400"/>
+<\div>
+
 ### Discriminator
 - PatchGAN: Operates on N x N patches instead of full images.
 - Focuses on local features, improves fine detail generation.
 
 ###  GAN Type
 - **Pix2Pix**: Conditional GAN for image-to-image translation.
-
-
+<div align="center">
+<img src="https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms/blob/main/Images/pix2pix.png" width="400"/>
+<\div>
 
 
 ## Loss Functions
@@ -63,8 +67,9 @@ This repository contains the implementation of SAR Image Colorization using a Co
 | Cycle GAN                     | 0.252  | 13.23     | -       |
 | EPC-GAN                       | 0.188  | 12.07     | 0.0047  |
 | **Pix2Pix + Perceptual Loss** | **0.97** | **27.42** | **0.0021** |
-
-
+<div align="center">
+<img src="https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms/blob/main/Images/Pix2Pix%20%2B%20Percep%20Results2.png" width="400"/>
+<\div>
 ## 🛠️ Installation
 
 ```bash
