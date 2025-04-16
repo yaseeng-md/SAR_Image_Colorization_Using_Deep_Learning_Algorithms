@@ -35,7 +35,7 @@ This repository contains the implementation of SAR Image Colorization using a Co
 ###  GAN Type
 - **Pix2Pix**: Conditional GAN for image-to-image translation.
 
-<img src="https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms/blob/main/Images/pix2pix.png" width="400"/>
+<img src="https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms/blob/main/Images/pix2pix.png"/>
 
 
 
@@ -68,7 +68,7 @@ This repository contains the implementation of SAR Image Colorization using a Co
 | EPC-GAN                       | 0.188  | 12.07     | 0.0047  |
 | **Pix2Pix + Perceptual Loss** | **0.97** | **27.42** | **0.0021** |
 
-<img src="https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms/blob/main/Images/Pix2Pix%20%2B%20Percep%20Results2.png" width="400"/>
+<img src="https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms/blob/main/Images/Pix2Pix%20%2B%20Percep%20Results2.png"/>
 
 ## 🛠️ Installation
 
