@@ -43,3 +43,49 @@ This repository contains the implementation of SAR Image Colorization using a Co
 - **MSE Loss:** Used in Denoising Autoencoder for additional refinement.
 
 ### Combined Loss:
+
+
+
+
+---
+
+## ⚙️ Training Setup
+
+- **Framework:** PyTorch
+- **GPU:** NVIDIA DGX A100 (200GB)
+- **Optimizer:** Adam
+  - Generator: LR = 0.0002, β1 = 0.005, β2 = 0.99
+  - Autoencoder: LR = 0.001
+- **Input Shape (Generator):** (1, 256, 256, 1)
+- **Input Shape (Discriminator):** (1, 256, 256, 2)
+
+---
+
+## 📊 Results
+
+| Model                          | SSIM   | PSNR (dB) | MSE     |
+|-------------------------------|--------|-----------|---------|
+| Pix2Pix                       | 0.159  | 11.32     | -       |
+| cGAN + SSIM + L1              | 0.353  | 16.28     | -       |
+| Cycle GAN                     | 0.252  | 13.23     | -       |
+| EPC-GAN                       | 0.188  | 12.07     | 0.0047  |
+| **Pix2Pix + Perceptual Loss** | **0.97** | **27.42** | **0.0021** |
+
+---
+
+## 🚫 Limitations
+
+- Limited training data (only 1000 images used).
+- Performance dips with noisy or high-edge images.
+- Currently focused on agricultural surfaces only.
+- Edge and texture preservation still has room for improvement.
+
+---
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms.git
+cd SAR_Image_Colorization_Using_Deep_Learning_Algorithms
+pip install -r requirements.txt
+
