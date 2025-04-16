@@ -32,6 +32,8 @@ This repository contains the implementation of SAR Image Colorization using a Co
 ###  GAN Type
 - **Pix2Pix**: Conditional GAN for image-to-image translation.
 
+![Alt Text](https://github.com/yaseeng-md/SAR_Image_Colorization_Using_Deep_Learning_Algorithms/blob/main/Images/UNet.png)
+
 
 ## Loss Functions
 
